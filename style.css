@@ -250,9 +250,3 @@ footer a{
 }
 
 /* footer - End */
-
-#box::after{
-    content: normal;
-    clear: both;
-    display: table;
-}
