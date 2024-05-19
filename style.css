@@ -119,7 +119,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
 }
 
 #features figure img{
@@ -132,23 +131,10 @@ section{
   font-weight: 400;  
 }
 
-#pre-materials{
+.featuresSpec{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    font-family: 'Lato', sans-serif;
-}
-
-#fast-shipping{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    font-family: 'Lato', sans-serif;
-}
-
-#qua-assurance{
-    display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 30px;
     font-family: 'Lato', sans-serif;
 }
