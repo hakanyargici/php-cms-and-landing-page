@@ -11,12 +11,14 @@
 
 header{
     min-height: 75px;
-    width: calc(75% - 30px);
+    width: calc(70% - 30px);
     margin: auto;
+}
+
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
     position: sticky;
     top: 0px;
     background-color: #EEEEEE;
@@ -59,15 +61,15 @@ a:hover{
 /* Header - End */
 
 /* Section - Start */
-section{
+.mainContent{
+    width: calc(70% - 30px);
     margin: auto;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-self: auto;
+    justify-content: center;
+    align-content: center;
     gap: 40px;
-    width: calc(75% - 30px);
 }
 /* article1 - Start */
 
@@ -162,12 +164,9 @@ section{
 #three{
     display: flex;
     justify-content: space-around;
-    margin: auto;
-    width: 75%;
-    margin-bottom: 35px;
 }
 
-#box{
+.box{
     border-style: solid;
     border-width: 1px;
     width: 300px;
@@ -176,26 +175,26 @@ section{
     text-align: center;
 }
 
-#box h1{
+.box h1{
     margin: auto;
     padding: 15px 0px;
     background-color: #DDDDDD;
     font-family: 'Lato', sans-serif;
 }
 
-#box h3{
+.box h3{
     padding: 15px 0px;
     font-family: 'Lato', sans-serif;
 }
 
-#box p{
+.box p{
     padding-bottom: 15px;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     line-height: 28px;
 }
 
-#box button{
+.box button{
     padding: 15px 0px;
     border-style: none;
     width: 100px;
