@@ -10,12 +10,15 @@
 /* Header - Start */
 
 header{
-    height: 75px;
-    margin-bottom: 0px;
+    min-height: 75px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     position: sticky;
     top: 0px;
+    background-color: #EEEEEE;
+    padding: 20px;
 }
 
 .scroll-target {
@@ -24,7 +27,7 @@ header{
 
 #banner img{
     width: 300px; 
-    padding: 30px;
+    padding: 10px;
 }
 
 .menu-elements{
@@ -32,7 +35,7 @@ header{
     font-weight: bold;
     display: flex;
     float: left;
-    padding: 30px;
+    padding: 10px;
 }
 
 #list nav ul li{
@@ -48,34 +51,31 @@ li a{
 }
 
 a:hover{
-    color: red;
+    color: #f1c40f;
+    text-shadow: black;
 }
 /* Header - End */
 
 /* Section - Start */
 section{
-    width: 80%;
     margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: auto;
 }
 /* article1 - Start */
 
-#contactMail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 #mails{
-    width: 500px;
+    margin: auto;
+    margin-bottom: 25px;
     text-align: center;
-}
-
-fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid;
+    padding: 10px 35px;
 }
 
 #label-email{
@@ -85,13 +85,17 @@ fieldset{
     margin-bottom: 30px;
 }
 
-#mail-box{
+#mailBox{
     margin-bottom: 20px;
     border-width: 2px 2px 2px 2px;
     border-style: solid;
     border-color: black;
     width: 250px;
     height: 30px;
+}
+
+#mailBox::placeholder{
+    text-align: center;
 }
 
 #submit-button{
