@@ -1,4 +1,11 @@
 <?php
-    $userConnect = new mysqli("localhost","hakanyargici","1234","originalTrombones");
-    $userConnect -> set_charset("utf8");
+    $hostName = "localhost";
+    $dbUser = "root";
+    $dbPassword = "";
+    $dbName = "originalTrombones";
+    $connectDb = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
+
+    if(!$connectDb){
+        die("Birşeyler Yanlış Gitti");
+    }
 ?>
