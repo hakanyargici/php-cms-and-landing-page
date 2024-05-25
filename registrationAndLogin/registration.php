@@ -16,6 +16,9 @@
         if (isset($_POST["submit"])) {
             $userName = $_POST["username"];
             $userPassword = $_POST["password"];
+
+            $passwordHash = password_hash($userPassword, PASSWORD_DEFAULT);
+
             $errors = array();
 
             if (empty($userName) or empty($userPassword)){
@@ -27,13 +30,19 @@
             }
             } else {
                 require_once "../config.php";
+
+                if (!$connectDb) {
+                    die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
+                }
+
                 $sql = "INSERT INTO userLogin (userName, userPass) VALUES (?, ?)";
                 $stmt = mysqli_stmt_init($connectDb);
                 $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
                 if ($prepareStmt) {
-                    mysqli_stmt_bind_param($stmt,"ss",$userName, $userPassword);
+                    mysqli_stmt_bind_param($stmt,"ss",$userName, $passwordHash);
                     mysqli_stmt_execute($stmt);
-                    echo "Giriş Başarılı";
+                    echo "Kayıt Başarılı!";
+                    header("Location: login.php");
                 } else{
                     die("Birşeyler Yanlış Gitti");
                 }
@@ -41,7 +50,7 @@
         }
         ?>
         <h2>Kayıt Ol!</h2>
-        <form action="index.php" method="post">
+        <form action="registration.php" method="post">
             <div class="input-group">
                 <label for="username">Kullanıcı Adı:</label>
                 <input type="text" id="username" name="username">
