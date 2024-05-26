@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/loginRegister.css">
 </head>
 <body>
     <div class="login-container">
@@ -16,7 +16,7 @@
             if (isset($_POST["login"])) {
                 $username = $_POST["username"];
                 $userPass = $_POST["password"];
-                require_once "config.php";
+                require_once "Other/config.php";
 
                 // Veritabanı bağlantısını kontrol etme
                 if (!$connectDb) {
@@ -29,7 +29,7 @@
 
                 if ($user) {
                     if (password_verify($userPass, $user["userPass"])) {
-                        header("Location: mainPage/main.php");
+                        header("Location: Main/main.php");
                         die();
                     } else {
                         echo "<p style='color:red;'>Şifreniz Uyuşmuyor!</p>";
@@ -40,20 +40,24 @@
             }
         ?>
         <h2>Login</h2>
-        <form action="login.php" method="post">
+        <form action="index.php" method="post">
             <div class="input-group">
-                <label for="username">User Name:</label>
+                <label for="username">Username:</label>
                 <input type="text" id="username" name="username">
             </div>
             <div class="input-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
-            <button type="submit" name="login" id="login">Login!</button>
-            <br><br>
-            <button type="button" id="register">
-                <a href="/registration.php" style="text-decoration: none; color: white;">Register!</a>
+            <button type="submit" name="login" id="login">
+                Login
             </button>
+            <br><br>
+            <a href="Other/registration.php" style="text-decoration: none; color: white;">
+                <button type="button" id="register" disabled>
+                    Register
+                </button>
+            </a>
         </form>
     </div>
 </body>
