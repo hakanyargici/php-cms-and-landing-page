@@ -30,10 +30,10 @@
     <section class="mainContent">
         <!--Form / Mail Bilgisi Alma-->
         <article id="contactMail">
-            <form action="get">
+            <form action="main.php" method="post">
                 <div id="mails">
                     <label id="label-email" for="mail">Handcrafted, home-made masterpieces</label>
-                    <input type="email" id="mailBox" required placeholder="Enter Your Email">
+                    <input type="email" id="mailBox" name="userMail" required placeholder="Enter Your Email">
                     <input type="submit" id="submit-button" value="GET STARTED">
                 </div>
             </form>
