@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -30,7 +32,7 @@
     <section class="mainContent">
         <!--Form / Mail Bilgisi Alma-->
         <article id="contactMail">
-            <form action="main.php" method="post">
+            <form action="mail.php" method="post">
                 <div id="mails">
                     <label id="label-email" for="mail">Handcrafted, home-made masterpieces</label>
                     <input type="email" id="mailBox" name="userMail" required placeholder="Enter Your Email">
