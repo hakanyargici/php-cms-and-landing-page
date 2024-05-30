@@ -54,7 +54,7 @@
             </button>
             <br><br>
             <a href="Other/registration.php" style="text-decoration: none; color: white;">
-                <button type="button" id="register" disabled>
+                <button type="button" id="register" >
                     Register
                 </button>
             </a>
