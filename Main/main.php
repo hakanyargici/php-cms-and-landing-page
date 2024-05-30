@@ -107,25 +107,25 @@
         </article>
         <!--Pricing / Ürünler Ve Fiyat Bilgisi-->
         <article id="three" class="scroll-target">
-                <div class="box">
-                    <h1>TENOR TROMBONE</h1>
-                    <h3>$600</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
+            <div class="box">
+                        <h1>TENOR TROMBONE</h1>
+                        <h3>$600</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="box">
+                        <h1>BASS TROMBONE</h1>
+                        <h3>$900</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="box">
+                        <h1>VALVE TROMBONE</h1>
+                        <h3>$1200</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
                 </div>
-                <div class="box">
-                    <h1>BASS TROMBONE</h1>
-                    <h3>$900</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
-                </div>
-                <div class="box">
-                    <h1>VALVE TROMBONE</h1>
-                    <h3>$1200</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
-                </div>
-            </div>
         </article>
     </section>
     <footer>
