@@ -61,10 +61,6 @@
         <?php
             // Veritabanı bağlantısı
             include_once("config.php");
-            // Bağlantıyı kontrol et
-            if ($connectDb->connect_error) {
-                die("Connection failed: " . $connectDb->connect_error);
-            }
 
             // Ürün ekleme işlemi
             if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["addProduct"])) {

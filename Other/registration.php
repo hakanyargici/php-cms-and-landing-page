@@ -22,10 +22,6 @@
 		} else {
 			require_once "config.php";
 
-			if (!$connectDb) {
-				die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
-			}
-
 			$sql = "INSERT INTO userLogin (userName, userPass) VALUES (?, ?)";
 			$stmt = mysqli_stmt_init($connectDb);
 			$prepareStmt = mysqli_stmt_prepare($stmt, $sql);

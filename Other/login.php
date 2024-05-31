@@ -8,11 +8,6 @@
 		$userPass = $_POST["password"];
 		require_once "../Other/config.php";
 
-		// Veritabanı bağlantısını kontrol etme
-		if (!$connectDb) {
-			die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
-		}
-
 		$sql = "SELECT * FROM userLogin WHERE userName = '$username'";
 		$result = mysqli_query($connectDb, $sql);
 		$user = mysqli_fetch_array($result, MYSQLI_ASSOC);

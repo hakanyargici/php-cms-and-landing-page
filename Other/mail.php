@@ -3,9 +3,6 @@
         $mail = $_POST["userMail"];
 
         require_once "config.php";
-        if (mysqli_connect_errno()) {
-            die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
-        }
 
         $sql = "INSERT INTO userMail (mailAdress) VALUES (?)";
         $stmt = mysqli_stmt_init($connectDb);
