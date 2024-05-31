@@ -53,7 +53,7 @@
 				Login
 			</button>
 			<br><br>
-			<a href="registration.php" style="text-decoration: none; color: white;">
+			<a href="registration.php">
 				<button type="button" id="register" >
 					Register
 				</button>
