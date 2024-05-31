@@ -69,14 +69,6 @@ CREATE TABLE `userLogin` (
   `userPass` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
---
--- Tablo döküm verisi `userLogin`
---
-
-INSERT INTO `userLogin` (`userID`, `userName`, `userPass`) VALUES
-(18, 'mustafakocal', '$2y$10$RIXZefVHd6sLMblcUlhc1.v2AEB4O9Mt2d7vE.bTz31I.KJ7aFn.y'),
-(19, 'rabiyetandaş', '$2y$10$1NjnGJBvjXjG/VOD04zYnuO9AJQmlznSQcdFkdWgRQ7vuthvj1jwC');
-
 -- --------------------------------------------------------
 
 --
@@ -88,20 +80,6 @@ CREATE TABLE `userMail` (
   `mailAdress` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
---
--- Tablo döküm verisi `userMail`
---
-
-INSERT INTO `userMail` (`mailID`, `mailAdress`) VALUES
-(1, 'hakanyargici@outlook.com'),
-(2, 'hakanyargici@outlook.com'),
-(3, 'hakanyargici@outlook.com'),
-(4, '123123@hotmail.com'),
-(5, 'hakanyargici@hotmail.com'),
-(6, 'rabiye@outlook.com'),
-(7, 'begum@hotmail.com'),
-(8, 'recep@hotmail.com'),
-(9, 'mustafakocal@hotmail.com');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
