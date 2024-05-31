@@ -72,20 +72,6 @@ CREATE TABLE `ourVideo` (
 --
 
 INSERT INTO `ourVideo` (`id`, `iframeLink`) VALUES
-(3, 'https://www.youtube.com/watch?v=-qbRwykRgXU'),
-(4, 'https://www.youtube.com/embed/-qbRwykRgXU?si=N8GlQyhz1YWt_31K'),
-(5, 'https://www.youtube.com/embed/-qbRwykRgXU?si=N8GlQyhz1YWt_31K'),
-(6, 'https://www.youtube.com/watch?v=h-3Xeps2xXQ'),
-(7, 'https://youtu.be/h-3Xeps2xXQ?si=ooPpvC_tn7a4W9_j'),
-(8, 'https://www.youtube.com/embed/IpH-8ThZNIk?si=EFDcw0C7f9ecSIuw'),
-(9, 'https://www.youtube.com/embed/-qbRwykRgXU?si=zcI9Z_wYrqVNL4_y'),
-(10, 'https://www.youtube.com/embed/-qbRwykRgXU?si=zcI9Z_wYrqVNL4_y'),
-(11, 'https://www.youtube.com/embed/-qbRwykRgXU?si=zcI9Z_wYrqVNL4_y'),
-(12, 'https://www.youtube.com/embed/x1yNS8UVHJs?si=B918wKxSIHFxcgvg'),
-(13, 'https://www.youtube.com/embed/x1yNS8UVHJs?si=B918wKxSIHFxcgvg'),
-(14, 'https://www.youtube.com/embed/x1yNS8UVHJs?si=B918wKxSIHFxcgvg'),
-(15, 'https://www.youtube.com/embed/x1yNS8UVHJs?si=B918wKxSIHFxcgvg'),
-(16, 'https://www.youtube.com/embed/Dm5Gk27FZbE?si=tqCEMDSqloMyhqiP'),
 (17, 'https://www.youtube.com/embed/Dm5Gk27FZbE?si=tqCEMDSqloMyhqiP');
 
 -- --------------------------------------------------------
@@ -106,11 +92,6 @@ CREATE TABLE `userLogin` (
 
 INSERT INTO `userLogin` (`userID`, `userName`, `userPass`) VALUES
 (18, 'mustafakocal', '$2y$10$RIXZefVHd6sLMblcUlhc1.v2AEB4O9Mt2d7vE.bTz31I.KJ7aFn.y'),
-(19, 'rabiyetandaş', '$2y$10$1NjnGJBvjXjG/VOD04zYnuO9AJQmlznSQcdFkdWgRQ7vuthvj1jwC'),
-(20, 'hakanyargici', '$2y$10$C1oTQzQtNk2RP89n7rJTjuctVzKx0Hxl.A4Q4rcUID4E8YGDNZ9qy'),
-(21, 'hakanyargici', '$2y$10$dJGDy3V6foTzOX0hDhWvluvKKnGJdAcjy31lRMaR9OAU3bSGOpbxi'),
-(22, '123', '$2y$10$WMqwHeboBny/ZbvhFhEcCOq7OgE86cD7F0lbaMLXWt28M1boYhp3y'),
-(23, 'denemehesap', '$2y$10$61m5xaUiAtn75CdmdH.lN.sGf1n76V9P8CATZpTz2Hod1A6e5oT/m');
 
 -- --------------------------------------------------------
 

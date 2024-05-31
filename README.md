@@ -13,7 +13,7 @@ Bu proje, HTML, CSS, PHP ve MySQL kullanılarak oluşturulmuş bir web sitesidir
 
 1. Yönetici paneline giriş yapın:
     ```
-    http://localhost/proje-adi/admin
+    http://localhost/dosyaadi/Other/login.php
     ```
 
 2. İçerik ekleyin, düzenleyin veya silin.
