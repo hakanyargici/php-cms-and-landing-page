@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -8,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Yusuf Hakan Yargıcı">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../Style/mainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +14,7 @@
     <header>
         <div class="navbar"> 
             <div id="banner">
-                <img src="content/product-landing-page-logo.png" alt="banner">
+                <img src="../content/product-landing-page-logo.png" alt="banner">
             </div>
             <div id="list">
                 <nav>
@@ -32,7 +30,7 @@
     <section class="mainContent">
         <!--Form / Mail Bilgisi Alma-->
         <article id="contactMail">
-            <form action="mail.php" method="post">
+            <form action="../Other/mail.php" method="post">
                 <div id="mails">
                     <label id="label-email" for="mail">Handcrafted, home-made masterpieces</label>
                     <input type="email" id="mailBox" name="userMail" required placeholder="Enter Your Email">
@@ -45,7 +43,7 @@
             <div id="features">
                 <div id="pre-materials" class="featuresSpec">
                     <figure>
-                        <img src="content/local_fire_department_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
+                        <img src="../content/local_fire_department_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
                     </figure>
                     <span>
                         <h1>
@@ -58,7 +56,7 @@
                 </div>
                 <div id="fast-shiping" class="featuresSpec">
                     <figure>
-                    <img src="content/local_shipping_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
+                    <img src="../content/local_shipping_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
                     </figure>
                     <span>
                         <h1>
@@ -71,7 +69,7 @@
                 </div>
                 <div id="qua-assurance" class="featuresSpec">
                     <figure>
-                        <img src="content/battery_charging_50_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
+                        <img src="../content/battery_charging_50_FILL0_wght400_GRAD0_opsz48.png" alt="materails">
                     </figure>
                     <span>
                         <h1>
@@ -86,32 +84,48 @@
         </article>
         <!--How It Works / Youtube-->
         <article id="two" class="scroll-target">
+
             <div id="howItWorks">
-                <iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0"
+                <?php
+                    error_reporting(E_ALL);
+                    ini_set('display_errors', 1);
+                    include_once("../Other/config.php");
+                    // Veritabanı bağlantısını kontrol etme
+                    if (!$connectDb) {
+                        die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
+                    }
+                    $query = "SELECT iframeLink FROM ourVideo ORDER BY id DESC LIMIT 1";
+                    $result = mysqli_query($connectDb, $query);
+                    $row = mysqli_fetch_array($result);
+                    $youtube_link = $row['iframeLink'];
+                ?>
+
+                <iframe src="<?php echo $youtube_link; ?>" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
         </article>
         <!--Pricing / Ürünler Ve Fiyat Bilgisi-->
         <article id="three" class="scroll-target">
-                <div class="box">
-                    <h1>TENOR TROMBONE</h1>
-                    <h3>$600</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
+            <div class="box">
+                        <h1>TENOR TROMBONE</h1>
+                        <h3>$600</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="box">
+                        <h1>BASS TROMBONE</h1>
+                        <h3>$900</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="box">
+                        <h1>VALVE TROMBONE</h1>
+                        <h3>$1200</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
+                        <button>Select</button>
+                    </div>
                 </div>
-                <div class="box">
-                    <h1>BASS TROMBONE</h1>
-                    <h3>$900</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
-                </div>
-                <div class="box">
-                    <h1>VALVE TROMBONE</h1>
-                    <h3>$1200</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis adipisci voluptatum optio animi maiores recusandae!</p>
-                    <button>Select</button>
-                </div>
-            </div>
         </article>
     </section>
     <footer>
