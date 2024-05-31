@@ -19,7 +19,7 @@
 
 		if ($user) {
 			if (password_verify($userPass, $user["userPass"])) {
-				header("Location: ../cms.php");
+				header("Location: cms.php");
 				die();
 			} else {
 				echo "<p style='color:red;'>Şifreniz Uyuşmuyor!</p>";
