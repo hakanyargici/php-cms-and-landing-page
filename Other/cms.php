@@ -137,6 +137,14 @@
         ?>
 
     </div>
+    <footer id="copyright">
+		<div class="footer-bar">
+			<p>Copyright 2016, Original Trombones</p>
+			<p>
+				<a href="../index.php">Turn Back Main Page</a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
 
