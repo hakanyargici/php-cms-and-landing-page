@@ -17,9 +17,10 @@ body {
     text-align: center;
 }
 
-.login-container h2 {
-    margin-bottom: 20px;
+.login-container img {
+    width: 300px;
 }
+
 
 .input-group {
     margin-bottom: 15px;
@@ -58,10 +59,8 @@ a {
     color: #cbaa28;
     cursor: pointer;
     font-size: 16px;
-    text-decoration: none;
 }
 
 a:hover {
     color: black;
-    text-decoration: solid;
 }
