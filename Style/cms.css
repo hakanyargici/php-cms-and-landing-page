@@ -1,0 +1,185 @@
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+/* Header - Start */
+
+header{
+    min-height: 75px;
+    width: calc(70% - 30px);
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: #EEEEEE;
+    padding: 20px;
+}
+
+.scroll-target {
+    scroll-margin-top: 40px; 
+}
+
+#banner img{
+    width: 300px; 
+}
+
+.menu-elements{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+
+#list nav ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #f1c40f;
+    text-shadow: black;
+}
+/* Header - End */
+
+
+/* Main Section - Start */
+.main-content{
+    width: calc(70% - 30px);
+    margin: auto;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+/* Main Section - End */
+
+/* User Name - Start */
+.main-content .user-info {
+    font-size: 34px;
+}
+/* User Name - End */
+
+/* footer - Start */
+
+#copyright {
+    width: calc(70% - 30px);
+    margin: auto;
+    padding: 30px;
+}
+
+.footer-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-bar p{
+    text-align: center;
+}
+
+.footer-bar p a{
+    text-decoration:line ;
+    color:#f1c40f;
+}
+
+.footer-bar p a:hover{
+    color: black;
+}
+
+/* footer - End */
+
+/* Form styles - Start */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Başlıklar arası boşluk */
+    font-weight: bold; /* Başlıkların kalın olması */
+    font-size: 18px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Form elemanları arası boşluk */
+    border: 1px solid #333; /* Form çerçevesi rengi */
+    box-sizing: border-box; /* Kenarlık dahil olacak şekilde genişlik hesaplama */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f1c40f; /* Buton rengi */
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e2b607; /* Butonun hover rengi */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Tablo ile sonraki eleman arası boşluk */
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px; /* Tablo içi boşluk artırıldı */
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold; /* Tablo başlıkları kalın yapıldı */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .main-content {
+        width: 100%; /* Mobil cihazlarda tam genişlik */
+        padding: 0 15px; /* Kenar boşlukları */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar img {
+        margin-bottom: 10px;
+    }
+
+    .menu-elements {
+        display: block;
+        margin-bottom: 10px; /* Menü elemanları arası boşluk */
+    }
+}
