@@ -50,6 +50,7 @@
 </head>
 <body>
 	<div class="login-container">
+		<img src="../content/product-landing-page-logo.png" alt="">
 		<h2>Register</h2>
 		<form action="registration.php" method="post">
 			<div class="input-group">

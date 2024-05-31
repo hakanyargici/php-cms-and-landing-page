@@ -39,6 +39,7 @@
 </head>
 <body>
 	<div class="login-container">
+		<img src="../content/product-landing-page-logo.png" alt="">
 		<h2>Login</h2>
 		<form action="login.php" method="post">
 			<div class="input-group">
