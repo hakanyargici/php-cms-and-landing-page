@@ -13,7 +13,7 @@
             echo "İşlem Gerçekleştirildi!";
             mysqli_stmt_close($stmt);
             mysqli_close($connectDb);
-            header("Location: ../Main/main.php");
+            header("Location: ../index.php");
             exit();
         } else {
             die("Birşeyler Yanlış Gitti");
