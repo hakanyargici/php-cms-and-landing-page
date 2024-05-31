@@ -48,7 +48,7 @@
             Hoşgeldin, 
             <?php
                 echo "$username";
-            ?>
+            ?>!
         </h2>
         <!-- Youtube Linki Ekleme -->
         <div id="iframe-section" class="iframe">
@@ -113,6 +113,7 @@
                     $sql = "INSERT INTO ourProducts (productName, productPrice, productAbout) VALUES ('$productName', '$productPrice', '$productAbout')";
                     
                     if ($connectDb->query($sql) === TRUE) {
+                        header("Location: ".$_SERVER['PHP_SELF']);
                         echo "New product added successfully";
                     } else {
                         echo "Error: " . $sql . "<br>" . $connectDb->error;
@@ -126,10 +127,12 @@
                     $sql = "DELETE FROM ourProducts WHERE productID=$productID";
                     
                     if ($connectDb->query($sql) === TRUE) {
-                        echo "Product deleted successfully";
+                        header("Location: ".$_SERVER['PHP_SELF']);
+                        echo "New product added successfully";
                     } else {
                         echo "Error: " . $sql . "<br>" . $connectDb->error;
                     }
+
                 }
             ?>
 
