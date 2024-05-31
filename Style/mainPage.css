@@ -228,14 +228,26 @@ a:hover{
     width: calc(70% - 30px);
     margin: auto;
     padding: 30px;
+}
+
+.footer-bar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
 }
 
-#copyright p{
+.footer-bar p{
     text-align: center;
+}
+
+.footer-bar p a{
+    text-decoration:line ;
+    color:#f1c40f;
+}
+
+.footer-bar p a:hover{
+    color: black;
 }
 
 /* footer - End */
