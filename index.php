@@ -19,9 +19,15 @@
 			<div id="list">
 				<nav>
 					<ul>
-						<li class="menu-elements"><a href="#one">Features</a></li>
-						<li class="menu-elements"><a href="#two">How It Works</a></li>
-						<li class="menu-elements"><a href="#three">Pricing</a></li>
+						<li class="menu-elements">
+							<a href="#one">Features</a>
+						</li>
+						<li class="menu-elements">
+							<a href="#two">How It Works</a>
+						</li>
+						<li class="menu-elements">
+							<a href="#three">Pricing</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
